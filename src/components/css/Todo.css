@@ -1,0 +1,83 @@
+.todo{
+    width: 70%;
+    min-height: 100%;
+    border-radius: 20px;
+    background: #fff;
+    margin: auto;
+    margin-top: 124px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 44px;
+    padding-bottom: 30px;
+    margin-bottom: 200px;
+    box-shadow: rgb(148, 155, 162) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.todo-header{
+    margin-top: 84px;
+    color: #002765;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 34px;
+}
+.todo-header img{
+    width: 58px;
+    margin-right: 12px;
+}
+.todo-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+.todo-input{
+    border-radius: 50px;
+    background: #edeef0;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 80px;
+    padding-left: 35px;
+    font-size: 20px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.todo-add-btn{
+    border-radius: 50px;
+    background: #ff6739;
+    width: 157px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer; 
+    box-shadow: rgb(213, 32, 32) 3px 3px 6px 0px inset, rgb(255, 51, 0) -3px -3px 6px 1px inset;
+}
+
+.todo-add-btn img{
+    width: 38px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .todo-add-btn{
+        width: 80px;
+        height: 60px;
+        margin-left: -70px;
+    }
+    .todo-add-btn p{
+        display: none;
+    }
+    .todo-add-btn img{
+        display: block;
+        animation: imgMove 2s;
+    }
+    @keyframes imgMove {
+        50% {transform: rotate(90deg);}
+    }
+    .todo-input{
+        height: 60px;
+    }
+}

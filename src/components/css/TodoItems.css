@@ -1,0 +1,29 @@
+.todoitems {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0px;
+  align-items: center;
+  margin-top: 24px;
+}
+.todoitems img {
+  height: 54px;
+}
+.todoitems-container {
+  display: flex;
+}
+.todoitems-text {
+  padding-left: 18px;
+  color: #404040;
+  font-size: 32px;
+}
+.todoitems-cross-icon {
+  cursor: pointer;
+}
+.line-through {
+  text-decoration: line-through solid #7b7b7b 5px;
+  animation: strikeLine 2s;
+}
+@keyframes strikeLine {
+  50% {transform: rotate(60deg);}
+  100% {transform: rotate(360deg);}
+}
